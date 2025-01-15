@@ -1,0 +1,117 @@
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: linear-gradient(#01367d, #000);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+  /* display: flex;
+  justify-content: center;
+  background-color: wheat;
+  align-items: center; */
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: #1c3e82;
+  padding: 20px;
+  border-radius: 10px;
+  width: auto;
+  height: 100vh;
+  overflow: scroll;
+  color: #fff;
+  position: relative;
+  border: 10px solid;
+}
+
+.modal-content h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.modal-main {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.photo-preview {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#photoText {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  z-index: 1;
+}
+
+.modal-input {
+  margin-left: 1rem;
+}
+
+.input-field {
+  width: 450px;
+}
+
+textarea {
+  height: 240px;
+}
+
+.button {
+  position: absolute;
+  height: 20px;
+  padding: 1rem 0;
+  bottom: 250px;
+  right: 60px;
+  button {
+    width: 200px;
+  }
+}
+
+.btn-admin {
+  margin-right: 250px;
+}
+
+.song {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.song::-webkit-scrollbar {
+  display: none;
+}
